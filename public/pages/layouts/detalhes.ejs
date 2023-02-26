@@ -1,0 +1,41 @@
+<div id="detalhes" class="container mb-5">
+
+    <div class="row m-3">
+
+        <div class="col-6 text-left">
+            <section>
+                <img class="text-left" id="img_filme" src="<%- IMGPATH + detalhesFilme.poster_path %>" >
+            </section>
+        </div>
+
+        <div class="col-6 text-right">
+            <section>
+                <p id="nome" class="m-1 p-3"><strong>Name : </strong>
+                    <apan id="avalicao">
+                        <%- detalhesFilme.original_title %>
+                    </apan>
+                </p>
+    
+                <p id="avaliacao" class="m-1 p-3"><strong>Assessment : </strong>
+                    <apan id="avalicao">
+                        <%- detalhesFilme.vote_average %>
+                    </apan>
+                </p>
+    
+                <p id="linguagem" class="m-1 p-3"><strong>Language : </strong><span id="linguagem">
+                        <%- detalhesFilme.original_language %>
+                    </span></p>
+    
+                <p id="data-lancamento" class="m-1 p-3"><strong>Launch : </strong><span id="data">
+                        <%- detalhesFilme.release_date %>
+                    </span></p>
+    
+                <p id="descricao" class="m-1 p-3"><strong>Description : </strong><span id="descricao">
+                        <%- detalhesFilme.overview %>
+                    </span></p>
+            </section>
+        </div>
+
+    </div>
+    
+</div>
