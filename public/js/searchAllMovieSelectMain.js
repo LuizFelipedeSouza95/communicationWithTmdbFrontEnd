@@ -13,12 +13,16 @@ async function getContent() {
     result.forEach((filmes) => {
       const nodeId = filmes.id;
 
-      const dicCard = document.createElement("div");
-      dicCard.className = "col-12 col-md-3 mb-3";
+      const divCard = document.createElement("div");
+      divCard.className = "col-12 col-md-3 mb-3";
+      divCard.id = "divCard";
 
       const section = document.createElement("section");
       section.height = "350";
       section.width = "120";
+
+      const sectionBottom = document.createElement("section");
+      sectionBottom.id = "sectionBottom";
 
       const img = document.createElement("img");
       img.src = IMGPATH + filmes.poster_path;
@@ -44,10 +48,11 @@ async function getContent() {
 
       section.appendChild(img);
       section.appendChild(title);
-      section.appendChild(notas);
-      section.appendChild(botaoDetalhes);
-      dicCard.appendChild(section);
-      listafilmes.appendChild(dicCard);
+      sectionBottom.appendChild(notas);
+      sectionBottom.appendChild(botaoDetalhes);
+      divCard.appendChild(sectionBottom);
+      divCard.appendChild(section);
+      listafilmes.appendChild(divCard);
 
       busca.value = "";
     });
