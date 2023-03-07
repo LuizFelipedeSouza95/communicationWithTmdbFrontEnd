@@ -1,41 +1,32 @@
-<div id="detalhes" class="container mb-5">
-
-    <div class="row m-3">
-
-        <div class="col-6 text-left">
-            <section>
-                <img class="text-left" id="img_filme" src="<%- IMGPATH + detalhesFilme.poster_path %>" >
-            </section>
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img id="img_filme" src="<%- IMGPATH + detailMovie.poster_path %>" />
         </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title mb-3"><%- detailMovie.original_title %></h5>
 
-        <div class="col-6 text-right">
-            <section>
-                <p id="nome" class="m-1 p-3"><strong>Name : </strong>
-                    <apan id="avalicao">
-                        <%- detalhesFilme.original_title %>
-                    </apan>
+                <p class="card-text mb-3">
+                    <strong>Assessment : </strong>
+                    <apan id="avalicao"> <%- detailMovie.vote_average %> </apan>
                 </p>
-    
-                <p id="avaliacao" class="m-1 p-3"><strong>Assessment : </strong>
-                    <apan id="avalicao">
-                        <%- detalhesFilme.vote_average %>
-                    </apan>
+
+                <p class="card-text">
+                    <strong>Language : </strong
+                    ><span id="linguagem"> <%- detailMovie.original_language %> </span>
                 </p>
-    
-                <p id="linguagem" class="m-1 p-3"><strong>Language : </strong><span id="linguagem">
-                        <%- detalhesFilme.original_language %>
-                    </span></p>
-    
-                <p id="data-lancamento" class="m-1 p-3"><strong>Launch : </strong><span id="data">
-                        <%- detalhesFilme.release_date %>
-                    </span></p>
-    
-                <p id="descricao" class="m-1 p-3"><strong>Description : </strong><span id="descricao">
-                        <%- detalhesFilme.overview %>
-                    </span></p>
-            </section>
+
+                <p class="card-text">
+                    <strong>Launch : </strong
+                    ><span id="data"> <%- detailMovie.release_date %> </span>
+                </p>
+
+                <p class="card-text">
+                    <strong>Description : </strong
+                    ><span id="descricao"> <%- detailMovie.overview %> </span>
+                </p>
+            </div>
         </div>
-
     </div>
-    
 </div>

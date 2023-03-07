@@ -25,3 +25,28 @@ body{
     flex-direction: column-reverse;
     justify-content: space-between;
 }
+#img_filme{
+  max-width: 100%;
+  height: auto;
+}
+#img_user{
+  width: 30px;
+  height: 30px;
+}
+/* 
+#buttom_delete{
+  width: 30px;
+  height: 30px;
+}
+#div1{
+  role: alert;
+  ariaLive: assertive;
+  ariaAtomic: true
+}
+#svgEdit{
+  xmlns: "http://www.w3.org/2000/svg";
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  viewBox: "0 0 16 16";
+} */

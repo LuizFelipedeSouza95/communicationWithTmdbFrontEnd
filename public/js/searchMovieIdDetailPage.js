@@ -5,7 +5,8 @@ async function searchMovieId(movieId) {
     );
     return response.json();
   } catch (error) {
-    console.error("HÁ ALGO ERRADO");
+    console.error("movie page detail error", error);
+    return "movie page detail error", error;
   }
 }
 
