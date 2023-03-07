@@ -93,9 +93,11 @@ async function searchComments() {
         a2.classList.add("btn", "btn-sm", "btn-danger");
         a2.title = "Deletar";
         a2.id = "btn_del";
-        a2.onclick = function () {
+        a2.setAttribute("data-bs-toggle", "modal");
+        a2.setAttribute("data-bs-target", "#comfirm");
+/*         a2.onclick = function () {
           destroyComments();
-        };
+        }; */
 
         const svg2 = document.createElementNS(
           "http://www.w3.org/2000/svg",
